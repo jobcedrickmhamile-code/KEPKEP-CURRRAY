@@ -1,0 +1,92 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    background:#08110a;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    height:100vh;
+
+    overflow:hidden;
+
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+/* CANVAS */
+canvas{
+display:block;
+margin:auto;
+background:linear-gradient(
+to bottom,
+#18351f,
+#071108
+);
+
+border:4px solid #2eff72;
+
+box-shadow:
+0 0 20px #2eff72,
+0 0 45px #145c2e;
+;
+
+border:4px solid rgb(24, 168, 5);
+
+box-shadow:
+0 0 20px rgb(20, 220, 193),
+0 0 50px rgb(13, 212, 119);
+}
+
+/* UI */
+#ui{
+position:absolute;
+top:10px;
+left:50%;
+transform:translateX(-50%);
+display:flex;
+gap:60px;
+font-size:28px;
+z-index:5;
+}
+
+#score{color:white;}
+#combo{color:gold;}
+
+/* SCREENS */
+#startScreen,#gameOverScreen{
+position:fixed;
+width:100%;
+height:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+background:rgba(10, 107, 34, 0.9);
+z-index:10;
+}
+
+#gameOverScreen{
+display:none;
+}
+
+.title{
+font-size:60px;
+color:rgb(20, 219, 37);
+margin-bottom:30px;
+}
+
+/* BUTTON */
+button{
+padding:15px 40px;
+font-size:25px;
+border:none;
+cursor:pointer;
+background:rgb(25, 53, 22);
+color:white;
+border-radius:10px;
+}
